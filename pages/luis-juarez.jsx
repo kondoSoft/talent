@@ -2,16 +2,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Portfolio.module.css'
+import Skills from '../components/Skills'
 
-const Skills = ({skill, knowledge}) => (
-  <div className={styles.skillContainer}>
-    <span className={styles.skillTitle}>{skill}</span>
-    <div className={styles.back}></div>
-    <div className={styles.skill} width={knowledge}></div>
-  </div>
-)
-
-export default function Home() {
+export default function Talent() {
   return (
     <div className={styles.container}>
       <Head>
@@ -39,7 +32,7 @@ export default function Home() {
       </sidebar>
       <main className={styles.main}>
         <div className={styles.centerImg} >
-          <Image className={styles.devImage} src='/cyberpolin.jpeg' width='200' height='200'/>
+          <Image className={styles.devImage} src='/luis-juarez.png' width='200' height='200'/>
         </div>
         <p>I love TI in general, and have 5+ years working as a developer from Frontend to Backend, latelly I've work on React Native. I focus my eforth to deliver good quality code and a great UI.</p>
         <p>I have good experience using aws, django and firebase, all this with React JS which is my main tecnology. I like to use typescrypt whenever I can, and I love to learn new ways to do stuff and solve problems</p>

@@ -2,16 +2,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Portfolio.module.css'
+import Skills from '../components/Skills'
 
-const Skills = ({skill, knowledge}) => (
-  <div className={styles.skillContainer}>
-    <span className={styles.skillTitle}>{skill}</span>
-    <div className={styles.back}></div>
-    <div className={styles.skill} width={knowledge}></div>
-  </div>
-)
-
-export default function Home() {
+export default function Talent() {
   return (
     <div className={styles.container}>
       <Head>
